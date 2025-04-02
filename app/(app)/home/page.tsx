@@ -31,7 +31,7 @@ function Home() {
     }, [fetchVideos])
 
     const handleDownload = useCallback((url: string, title: string) => {
-        () => {
+        // () => {
             const link = document.createElement("a");
             link.href = url;
             link.setAttribute("download", `${title}.mp4`);
@@ -40,7 +40,7 @@ function Home() {
             link.click();
             document.body.removeChild(link);
 
-        }
+        // }
 
     }, [])
 
