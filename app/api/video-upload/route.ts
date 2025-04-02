@@ -61,8 +61,10 @@ export async function POST(request: NextRequest) {
                 },
                 (error, result) => {
                     if (error) {
+                        console.log("Cloudinary upload error", error)
                         reject(error)
                     } else {
+                        console.log("Cloudinary upload successful:", result);
                         resolve(result as CloudinaryUploadResut)
                     }
                 }
@@ -86,6 +88,7 @@ export async function POST(request: NextRequest) {
 
     } catch (error) {
         console.log("Upload video failed", error)
+        console.log("Error details:", JSON.stringify(error, null, 2));
         return NextResponse.json({ error: 'Upload video failed' }, { status: 500 });
     } finally {
         await prisma.$disconnect()
