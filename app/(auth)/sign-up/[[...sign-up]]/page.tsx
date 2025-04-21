@@ -9,7 +9,7 @@ export default function Page() {
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-900 p-4 sm:p-6">
       {/* Logo or App Name */}
       <div className="mb-4 sm:mb-6">
-        <h1 className="text-3xl sm:text-4xl font-bold text-indigo-600 text-center">Cloudinary SAAS</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold text-indigo-600 text-center">PixelFlow</h1>
       </div>
       
       {/* Main Card */}
@@ -19,7 +19,7 @@ export default function Page() {
           <div className="text-center mb-4 sm:mb-6">
             <h2 className="text-xl sm:text-2xl font-bold text-gray-200">Sign Up</h2>
             <p className="text-xs sm:text-sm text-gray-100 mt-1">
-              Create your account to start using Cloudinary SAAS
+              Create your account to start using PixelFlow
             </p>
           </div>
           

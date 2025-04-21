@@ -30,7 +30,7 @@ const HomePage: React.FC = () => {
               <div className="relative z-10 bg-base-100 p-6 rounded-xl shadow-xl border border-base-300 mt-8 lg:mt-0"> {/* Added mt-8 for mobile and mt-0 for desktop */}
                 <div className="flex items-center gap-3 mb-4">
                   <CloudIcon className="w-8 h-8 text-primary" />
-                  <h3 className="text-xl font-bold">Cloudinary SAAS</h3>
+                  <h3 className="text-xl font-bold">PixelFlow</h3>
                 </div>
                 
                 <div className="space-y-4 mb-6">
@@ -62,7 +62,7 @@ const HomePage: React.FC = () => {
           <div className="w-full lg:w-1/2 text-center lg:text-left pt-8 lg:pt-0 lg:pr-8"> {/* Added lg:pr-8 for padding on desktop */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
-                Cloudinary SAAS
+               PixelFlow
               </span>
             </h1>
             <p className="text-lg md:text-xl mb-6 max-w-md">
@@ -153,7 +153,7 @@ const HomePage: React.FC = () => {
         <div>
           <p className="font-bold text-lg flex items-center gap-2">
             <CloudIcon className="w-6 h-6" />
-            Cloudinary SAAS
+            PixelFlow
           </p>
           <p>Built with Next.js, Cloudinary and Clerk</p>
           <p>Copyright © {new Date().getFullYear()} - All rights reserved</p>

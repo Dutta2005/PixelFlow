@@ -100,7 +100,7 @@ export default function AppLayout({
             <div className="flex-1 truncate">
               <Link href="/" onClick={handleLogoClick} className="truncate">
                 <div className="btn btn-ghost normal-case text-lg sm:text-xl md:text-2xl font-bold tracking-tight cursor-pointer truncate">
-                  Cloudinary Showcase
+                  PixelFlow
                 </div>
               </Link>
             </div>
