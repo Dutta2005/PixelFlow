@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 import { useRouter } from 'next/navigation'
+import { toast } from 'sonner';
 
 function VideoUpload() {
 
@@ -20,12 +21,12 @@ function VideoUpload() {
     event.preventDefault()
 
     if (!file) {
-      alert('Please select a file')
+      toast('Please select a file')
       return
     }
 
     if (file.size > MAX_FILE_SIZE) {
-      alert('File size exceeds 70MB')
+      toast('File size exceeds 70MB')
       return
     }
 
@@ -42,13 +43,13 @@ function VideoUpload() {
 
       // check if the response is successful
       if (response.status === 200) {
-        alert('Video uploaded successfully')
+        toast('Video uploaded successfully')
         router.push('/')
       }
 
     } catch (error) {
       console.log(error)
-      alert('Failed to upload video')
+      toast('Failed to upload video')
     }
   }
 

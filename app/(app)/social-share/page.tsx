@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef} from 'react'
 import { CldImage } from 'next-cloudinary';
+import { toast } from 'sonner'
 
 
 const socialFormats = {
@@ -58,7 +59,7 @@ export default function SocialShare() {
       } catch (error) {
         
         console.log("Failed to upload image", error);
-        alert("Failed to upload image");
+        toast("Failed to upload image");
 
       } finally {
         setIsUploading(false);
