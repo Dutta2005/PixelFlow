@@ -4,6 +4,7 @@ import "./globals.css";
 import {
   ClerkProvider,
 } from '@clerk/nextjs'
+import { Toaster } from "sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +33,17 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <Toaster 
+          toastOptions={{
+            style: {
+              background: 'oklch(27.8% 0.033 256.848)',
+              color: '#fff',
+              fontSize: '16px',
+              padding: '16px 24px',
+              borderRadius: '8px',
+            },
+          }}
+        />
       </body>
     </html>
     </ClerkProvider>
